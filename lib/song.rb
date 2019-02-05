@@ -24,6 +24,7 @@ class Song
   self.column_names.each do |col_name|
     attr_accessor col_name.to_sym
   end
+  #this informs the class to have attr_accessors named after each column name 
 
   def initialize(options={})
     options.each do |property, value|
